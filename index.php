@@ -78,10 +78,11 @@ class Movies
     public function getFinalprice()
     {
         if ($this->year < 2022) {
-        } else {
-            $this->price = $this->price + 10;
+            return number_format($this->price);
+        } else 
+        {
+            return number_format($this->price = $this->price + 10);
         }
-        return number_format($this->price, 2);;
     }
 }
 
